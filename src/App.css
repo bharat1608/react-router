@@ -1,0 +1,56 @@
+
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.course-page {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+}
+
+.course-card h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.course-page h1, .course-page p {
+  text-align: center;
+}
